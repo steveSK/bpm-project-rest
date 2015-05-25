@@ -23,11 +23,10 @@ import javax.ws.rs.core.Response;
  *
  * @author steveSK
  */
-@ApplicationPath("/resources")
 @Path("bank")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-public class BankResource extends Application{ 
+public class BankResource {
 
     private final List<String> validCardNumbers;
 
@@ -60,5 +59,4 @@ public class BankResource extends Application{
     public Response reimburseMoney(String cardNumber) {
             return Response.ok().build();
     }
-
 }

@@ -15,11 +15,11 @@ import javax.ws.rs.core.Response;
  *
  * @author honza
  */
-@ApplicationPath("/resources")
+
 @Path("socnet")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-public class Socnet extends Application {
+public class Socnet {
   public Socnet() { }
 
   @POST
